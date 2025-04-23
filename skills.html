@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.skills-section h1{
+  font-size: 48px;
+  font-weight: bold;
+  color: #f7f7f8;
+}
+      
+  .skill-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .skill {
+    margin-bottom: 20px;
+  }
+
+  .skill-name {
+    font-weight: bold;
+  }
+
+  .progress-bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .progress {
+    height: 20px;
+    background-color: #3498db;
+    width: 0;
+    border-radius: 20px;
+    transition: width 1s ease-in-out;
+  }
+
+ 
+  .html .progress { width: 90%; }
+  .css .progress { width: 80%; }
+  .js .progress { width: 70%; }
+
+  .radial-bars {
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+svg {
+  transform: rotate(-90deg);
+  width: 120px;
+  height: 120px;
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+
+.progress-bar {
+  stroke: #e6e6e6;
+}
+
+.path {
+  stroke: #00aaff;
+  stroke-dasharray: 314.16; /* 2πr where r = 50 */
+  stroke-dashoffset: 314.16;
+  animation: progressAnimation 2s ease-out forwards;
+}
+
+.path-1 { stroke-dashoffset: calc(314.16 - (314.16 * 80) / 100); }
+.path-2 { stroke-dashoffset: calc(314.16 - (314.16 * 85) / 100); }
+.path-3 { stroke-dashoffset: calc(314.16 - (314.16 * 80) / 100); }
+.path-4 { stroke-dashoffset: calc(314.16 - (314.16 * 90) / 100); }
+
+.percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #29dff4;
+  
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 20pxpx;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.btn-box{
+  display: inline-block;
+  padding: 32px 28px;
+  background: rgb(6, 160, 220);
+  border-radius: 40px;
+  font-size: 16px;
+  color:#323333;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}.btn-box:hover{
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan,  0 0 50px cyan,
+  0 0 200px cyan,  0 0 200px cyan
+}
+.fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 { animation-delay: 0.5s; }
+    .delay-2 { animation-delay: 1.0s; }
+    .delay-3 { animation-delay: 1.5s; }
+    .delay-4 { animation-delay: 2s; }
+    .delay-5 { animation-delay: 3s; }
+ 
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+ 
+    <section class=" skills-section fade-in delay-1" >
+        <h1 > <span>Skills</span></h1>
+        <div class="container1" id="skills">
+   <h2 class="heading1 fade-in delay-1" >Technical Skills</h2>
+   <div class="skill-container">
+    <div class="skill html">
+      <div class="skill-name fade-in delay-2" >HTML</div>
+      <div class="progress-bar"><div class="progress fade-in delay-4">
+      </div></div>
+    </div>
+    <div class="skill css">
+      <div class="skill-name fade-in delay-3">CSS</div>
+      <div class="progress-bar"><div class="progress fade-in delay-4">
+      </div></div>
+    </div>
+    <div class="skill js">
+      <div class="skill-name fade-in delay-4">JavaScript</div>
+      <div class="progress-bar"><div class="progress fade-in delay-4">
+      </div></div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container1">
+    <h2 class="heading1 fade-in delay-1">Professional Skills</h2>
+    <div class="radial-bars fade-in delay-2">
+       <svg x="0px"y="0px" viewbox="0 0 120 120">
+        <circle class="progress-bar" cx="50" cy="50" r="50"></circle>
+        <circle class="path path-1" cx="50" cy="50" r="50"></circle>
+       </svg>
+       <div class="percentage">80%</div>
+       <div class="text">Creativity</div>
+    </div>
+    <div class="radial-bars fade-in delay-3">
+      <svg x="0px"y="0px" viewbox="0 0 120 120">
+        <circle class="progress-bar" cx="50" cy="50" r="50"></circle>
+        <circle class="path path-2" cx="50" cy="50" r="50"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+        <div class="text">Communication</div>
+     </div>
+     <div class="radial-bars fade-in delay-4">
+      <svg x="0px"y="0px" viewbox="0 0 120 120">
+        <circle class="progress-bar" cx="50" cy="50" r="50"></circle>
+        <circle class="path path-3" cx="50" cy="50" r="50"></circle>
+        </svg>
+        <div class="percentage">80%</div>
+        <div class="text">Problem Solving</div>
+     </div>
+     
+  </div>  
+  
+</div> 
+
+ </section>
+ <a href="projects.html" class="btn-box fade-in delay-5" > More About Me</a>    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Education Details</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    height: 100vh;
+      background: rgb(11, 59, 59);
+   
+    
+    }
+
+    .education-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+     
+    }
+
+    .education-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background-color: #2ee6f7;
+      color: black;
+  
+    }
+ 
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-in forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+    .delay-5 { animation-delay: 1.5s; }
+    .education-card h2{
+      margin-top: 0;
+      color: #333;
+    }
+
+    .education-card p {
+      margin: 5px 0;
+    }
+    .skills-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding:150 150 150 150 ;
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  color: #ebf3f4;
+}
+h1 span{
+  color:aqua;
+}
+.btn-box{
+    width: 150px;
+    height:auto;
+    border-radius: 10px;
+    border:2px solid #090909;
+  
+
+  }
+  .btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,  0 0 50px cyan,
+    0 0 200px cyan,  0 0 200px cyan
+  }
+
+  </style>
+</head>
+<body>
+<h1 class="skills-section fade-in-up delay-1"  > <span>Education</span></h1>
+  <div class="education-container">
+    <div class="education-card fade-in-up delay-2"  >
+        <h2  >Bachelor of science</h2>
+      <p><strong>University:</strong>PMN Degree Collage</p>
+      <p><strong>Year:</strong> 2017- 2020</p>
+      <p><strong>Major:</strong> Chemistry</p>
+      <p><strong>Percentage</strong>83%</p>
+    </div>
+
+    <div class="education-card fade-in-up delay-3" >
+      <h2>Intermediate</h2>
+      <p><strong>University:</strong>Sri Guru Junior collage</p>
+      <p><strong>Year:</strong> 2015- 2017</p>
+      <p><strong>Major:</strong> Mpc</p>
+      <p><strong>Percentage:</strong>94%</p>
+    </div>
+
+    <div class="education-card fade-in-up delay-4"  >
+  <h2>Secondary Education</h2>
+      <p><strong>Institute:</strong> B.S.M Public school</p>
+      <p><strong>Year:</strong> 2014-2015</p>
+      <p><strong>Percentage</strong>83%</p>
+    </div>
+  </div>
+  <a href="skills.html" class="btn-box fade-in-up delay-5"   > More About Me</a>    </div>
+</body>
+</html>

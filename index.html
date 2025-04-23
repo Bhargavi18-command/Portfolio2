@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile</title>
+ <link rel="stylesheet" href="style.css">
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ <script src="https://unpkg.com/typed.js@2.0.1st/dist/typed.umd.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">My<span style="color:aqua">Profile</span> </a>
+    <nav class="navbar">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html" >Skills</a>
+        <a href="projects.html">Projects</a>      
+        <a href="contact.html" >Contact</a>
+    </nav>
+</header>
+  <section class="hero-section">
+    <div class="text-content">
+      <h2 class="fade-in">Hello, It's Me</h2>
+      <h1 class="fade-in"style="color:aqua;font-size: 30px;animation-delay:0.2s">Bhargavi</h1><br><br>
+      <h2>And I'm a <span id="text"></span></h2>
+
+      <script>
+        var typed = new Typed("#text", {
+          strings: ["UI/UX Designer", "Web Developer", "Frontend Developer"],
+          typeSpeed: 70,
+          backSpeed: 40,
+          backDelay: 1500,
+          loop: true
+        });
+      </script>
+      <p> I'm a UIUX & Web Designer.My expertise is to create and website design,frontend design and many more..</p>
+      <div class="home-sci">
+      <a href ="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook' ></i></a>
+      <a href="https://www.whatsapp.com"target="_blank"><i class='bx bxl-whatsapp' ></i></a>
+      <a href="https://telegram.org"><i class='bx bxl-telegram' ></i> </a>
+      <a href="https://www.instagram.com"> <i class='bx bxl-instagram' ></i></a>
+    </div>
+    <a href="resume.pdf" download="resume.pdf">
+    
+								<button class="btn-box" type="button">Download Resume</button>
+							</a>
+    </a>
+    </div>
+    <div class="image-container">
+    <img src="profile 10.jpeg" alt="Profile Image" class="profile-image">
+    </div>
+  </section>
+ 
+
+
+     <script src="main.js"></script>
+   
+
+
+</body>
+</html>
